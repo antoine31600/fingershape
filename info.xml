@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SoftwareVersion>1.2.11</SoftwareVersion>
+  <ScanTime>2024-02-29T14:06:19.0272601-05:00</ScanTime>
+  <FrameRate>21.029897689819336</FrameRate>
+  <ShutterSpeed>47.355712890625</ShutterSpeed>
+  <ReferenceProjections>320</ReferenceProjections>
+  <DataProjections>320</DataProjections>
+</Info>
