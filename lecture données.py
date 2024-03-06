@@ -81,10 +81,12 @@ def fithauteur(file, longueur):
     return abscisses, ordonnéesbis, ordonnéesfit, *popt, *pcov
  
  
-hauteur = fithauteur("h1 5.45.csv", 5.45)
-rayon = fitrayon("rayon1 0.79.csv", 0.79)
-incerth= np.sqrt(np.diag(hauteur[7]))+ np.sqrt(np.diag(hauteur[8]))
-print('h=',abs(hauteur[3]-hauteur[4]),'incertitude=',incerth)
+hauteur = fithauteur("h2 5.3.csv", 5.3)
+rayon = fitrayon("rayon2 1.03.csv", 1.03)
+incerth= np.sqrt(np.diag(hauteur[7:]))
+print('h=',abs(hauteur[3]-hauteur[4]),'incertitude=',np.round(incerth[1]+incerth[2], decimals = 3))
+incertr= np.sqrt(np.diag(rayon[7:]))
+print('h=',abs(rayon[3]-rayon[4]),'incertitude=',np.round(incertr[1]+incertr[2], decimals = 3))
 ax = plt.subplot(211)
 ax.plot(hauteur[0], hauteur[1], label="mesures")
 ax.plot(hauteur[0], hauteur[2], label="fit")
